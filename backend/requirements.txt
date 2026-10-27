@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+pandas
+scikit-learn
+joblib
+# Add any additional packages you need for data processing or model training

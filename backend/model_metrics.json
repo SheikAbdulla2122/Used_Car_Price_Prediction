@@ -1,0 +1,44 @@
+{
+    "selected_model": "Random Forest",
+    "target": "selling_price",
+    "currency": "INR",
+    "dataset_file": "data/raw/cardekho_dataset.csv",
+    "rows_used": 15411,
+    "training_rows": 12328,
+    "testing_rows": 3083,
+    "test_size": 0.2,
+    "selection_metric": "lowest MAE",
+    "features": [
+        "brand",
+        "model",
+        "seller_type",
+        "fuel_type",
+        "transmission_type",
+        "vehicle_age",
+        "km_driven",
+        "mileage",
+        "engine",
+        "max_power",
+        "seats"
+    ],
+    "results": [
+        {
+            "model": "Linear Regression",
+            "mae": 264971.03244377667,
+            "rmse": 485832.60914222413,
+            "r2": 0.6864518681377351
+        },
+        {
+            "model": "Decision Tree",
+            "mae": 119864.74078863797,
+            "rmse": 277537.1432469593,
+            "r2": 0.8976770335634183
+        },
+        {
+            "model": "Random Forest",
+            "mae": 99803.74212830364,
+            "rmse": 221894.39294992943,
+            "r2": 0.9345931022175596
+        }
+    ]
+}
